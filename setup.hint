@@ -1,0 +1,4 @@
+category: X11
+requires: cygwin xproto kbproto inputproto libXau libXdmcp
+sdesc: "Xorg X11 core library (development)"
+ldesc: "Xorg X11 core library"
