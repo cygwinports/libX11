@@ -3,20 +3,20 @@ libX11
 Xorg X11 core library
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   libXau6-1.0.1-1
   libXdmcp6-1.0.1-1
 
 Build requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
   sed-4.1.5-1
 
@@ -39,18 +39,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libX11-1.0.2-X-src.tar.bz2
+  unpack libX11-1.0.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libX11-1.0.2-X.cygport all
+  cygport ./libX11-1.0.3-X.cygport all
 
 This will create:
-  /usr/src/libX11-1.0.2-X-src.tar.bz2
-  /usr/src/libX11-1.0.2-X.tar.bz2
-  /usr/src/libX11-data-1.0.2-X.tar.bz2
-  /usr/src/libX11-doc-1.0.2-X.tar.bz2
-  /usr/src/libX11_6-1.0.2-X.tar.bz2
+  /usr/src/libX11-1.0.3-X-src.tar.bz2
+  /usr/src/libX11-1.0.3-X.tar.bz2
+  /usr/src/libX11-data-1.0.3-X.tar.bz2
+  /usr/src/libX11-doc-1.0.3-X.tar.bz2
+  /usr/src/libX11_6-1.0.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -70,13 +70,13 @@ Files included in the main package:
   /usr/lib/libX11.dll.a
   /usr/lib/libX11.la
   /usr/lib/pkgconfig/x11.pc
-  /usr/share/doc/Cygwin/libX11-1.0.2.README
-  /usr/share/doc/libX11-1.0.2/AUTHORS
-  /usr/share/doc/libX11-1.0.2/COPYING
-  /usr/share/doc/libX11-1.0.2/ChangeLog
-  /usr/share/doc/libX11-1.0.2/INSTALL
-  /usr/share/doc/libX11-1.0.2/NEWS
-  /usr/share/doc/libX11-1.0.2/README
+  /usr/share/doc/Cygwin/libX11-1.0.3.README
+  /usr/share/doc/libX11-1.0.3/AUTHORS
+  /usr/share/doc/libX11-1.0.3/COPYING
+  /usr/share/doc/libX11-1.0.3/ChangeLog
+  /usr/share/doc/libX11-1.0.3/INSTALL
+  /usr/share/doc/libX11-1.0.3/NEWS
+  /usr/share/doc/libX11-1.0.3/README
 
 Files included in the runtime package:
 
@@ -879,6 +879,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.3-1 -----
+Version bump.
 
 ----- version 1.0.2-1 -----
 Version bump.
