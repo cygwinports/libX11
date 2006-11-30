@@ -1,0 +1,4 @@
+category: X11 Doc
+external-source: libX11
+sdesc: "Xorg X11 core library (documentation)"
+ldesc: "Xorg X11 core library"
