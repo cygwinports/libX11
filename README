@@ -889,7 +889,7 @@ Files included in the main package:
 
 Port Notes:
 
------ version 1.1-1 -----
+----- version 1.1.1-1 -----
 X11R7.2 version bump, built with XCB support.
 
 ----- version 1.0.3-1 -----
