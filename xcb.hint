@@ -1,5 +1,5 @@
 category: X11
 requires: cygwin
 external-source: libX11
-sdesc: "Xorg X11 core library (XCB runtime)"
-ldesc: "Xorg X11 core library"
+sdesc: "X.Org X11 core library (XCB runtime)"
+ldesc: "X.Org X11 core library"

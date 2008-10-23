@@ -1,9 +1,0 @@
-inherit xorg
-
-PKG_NAMES="${PN} ${PN}_6 ${PN}-xcb1 ${PN}-devel ${PN}-doc"
-PKG_HINTS="setup runtime xcb devel doc"
-PKG_CONTENTS[0]='usr/lib/X11/ usr/share/X11/ usr/share/doc/'
-PKG_CONTENTS[1]='usr/bin/cygX11-?.dll'
-PKG_CONTENTS[2]='usr/bin/cygX11-xcb-?.dll'
-PKG_CONTENTS[3]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
-PKG_CONTENTS[4]='usr/share/man/'

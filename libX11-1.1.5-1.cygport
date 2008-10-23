@@ -1,0 +1,14 @@
+inherit xorg
+
+PATCH_URI="1.1.5-sys_time_h.patch"
+
+x11abi=6
+xcbabi=1
+PKG_NAMES="${PN} ${PN}_${x11abi} ${PN}-xcb${xcbabi} ${PN}-devel"
+PKG_HINTS="setup runtime xcb devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/cygX11-${x11abi}.dll usr/lib/X11/ usr/share/X11/ usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/cygX11-xcb-${xcbabi}.dll"
+PKG_CONTENTS[3]='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/man/'
+
+CYGCONF_ARGS="--with-xcb --without-launchd"
