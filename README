@@ -1,17 +1,18 @@
 libX11
 ------------------------------------------
-Xorg X11 core library
+X.Org X11 core library
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libxcb1-1.1-1
+  libxcb1-1.1-2
+  libxcb-xlib0-1.1-2
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-1
   automake1.10-1.10.1-1
   binutils-20080624-2
-  cygport-0.4.1-1
+  cygport-0.4.2-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.6a-1
@@ -23,19 +24,19 @@ Build requirements:
   inputproto-1.4.4-1
   kbproto-1.0.3-1
   libXau-devel-1.0.4-1
-  libXdmcp-devel-1.0.3-1
+  libXdmcp-devel-1.0.2-3
   xcmiscproto-1.1.2-1
   xextproto-7.0.3-1
   xf86bigfontproto-1.1.2-1
   xorg-util-macros-1.1.6-1
-  xproto-7.0.13-1
+  xproto-7.0.14-1
   xtrans-1.2.2-1
 
 Canonical website:
   http://xorg.freedesktop.org/
 
 Canonical download:
-  http://xorg.freedesktop.org/releases/individual/
+  http://xorg.freedesktop.org/releases/individual/lib/
 
 -------------------------------------------
 
@@ -261,8 +262,10 @@ Files included in the main package:
   /usr/include/X11/Xresource.h
   /usr/include/X11/Xutil.h
   /usr/include/X11/cursorfont.h
+  /usr/lib/libX11-xcb.a
   /usr/lib/libX11-xcb.dll.a
   /usr/lib/libX11-xcb.la
+  /usr/lib/libX11.a
   /usr/lib/libX11.dll.a
   /usr/lib/libX11.la
   /usr/lib/pkgconfig/x11-xcb.pc
