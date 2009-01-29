@@ -10,9 +10,9 @@ Runtime requirements:
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
-  cygport-0.4.2-1
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool-2.2.6a-1
@@ -49,9 +49,8 @@ Build instructions:
 
 This will create:
   /usr/src/libX11-1.1.5-X-src.tar.bz2
-  /usr/src/libX11-1.1.5-X.tar.bz2
   /usr/src/libX11-devel-1.1.5-X.tar.bz2
-  /usr/src/libX11-doc-1.1.5-X.tar.bz2
+  /usr/src/libX11-xcb-devel-1.1.5-X.tar.bz2
   /usr/src/libX11-xcb1-1.1.5-X.tar.bz2
   /usr/src/libX11_6-1.1.5-X.tar.bz2
 
@@ -238,7 +237,6 @@ Files included in the main package:
   /usr/share/X11/locale/zh_TW/Compose
   /usr/share/X11/locale/zh_TW/XI18N_OBJS
   /usr/share/X11/locale/zh_TW/XLC_LOCALE
-  /usr/share/doc/Cygwin/libX11-1.1.README
   /usr/share/doc/libX11-1.1/AUTHORS
   /usr/share/doc/libX11-1.1/COPYING
   /usr/share/doc/libX11-1.1/ChangeLog
@@ -246,14 +244,10 @@ Files included in the main package:
   /usr/share/doc/libX11-1.1/NEWS
   /usr/share/doc/libX11-1.1/README
 
-(libX11-xcb1)
-  /usr/bin/cygX11-xcb-1.dll
-
 (libX11-devel)
   /usr/include/X11/ImUtil.h
   /usr/include/X11/XKBlib.h
   /usr/include/X11/Xcms.h
-  /usr/include/X11/Xlib-xcb.h
   /usr/include/X11/Xlib.h
   /usr/include/X11/XlibConf.h
   /usr/include/X11/Xlibint.h
@@ -262,16 +256,10 @@ Files included in the main package:
   /usr/include/X11/Xresource.h
   /usr/include/X11/Xutil.h
   /usr/include/X11/cursorfont.h
-  /usr/lib/libX11-xcb.a
-  /usr/lib/libX11-xcb.dll.a
-  /usr/lib/libX11-xcb.la
   /usr/lib/libX11.a
   /usr/lib/libX11.dll.a
   /usr/lib/libX11.la
-  /usr/lib/pkgconfig/x11-xcb.pc
   /usr/lib/pkgconfig/x11.pc
-
-(libX11-doc)
   /usr/share/man/man3/AllPlanes.3.gz
   /usr/share/man/man3/BitmapBitOrder.3.gz
   /usr/share/man/man3/BitmapPad.3.gz
@@ -886,9 +874,22 @@ Files included in the main package:
   /usr/share/man/man3/XwcTextPerCharExtents.3.gz
   /usr/share/man/man3/XwcTextPropertyToTextList.3.gz
 
+(libX11-xcb1)
+  /usr/bin/cygX11-xcb-1.dll
+
+(libX11-xcb-devel)
+  /usr/include/X11/Xlib-xcb.h
+  /usr/lib/libX11-xcb.a
+  /usr/lib/libX11-xcb.dll.a
+  /usr/lib/libX11-xcb.la
+  /usr/lib/pkgconfig/x11-xcb.pc
+
 ------------------
 
 Port Notes:
+
+----- version 1.1.5-2 -----
+Patch for semaphore handle leakage (sourceware bug 9795).
 
 ----- version 1.1.5-1 -----
 Version bump for X11R7.4.
