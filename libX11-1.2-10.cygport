@@ -1,6 +1,7 @@
 inherit xorg
 
-PATCH_URI="1.1.5-sys_time_h.patch"
+PATCH_URI="1.1.5-sys_time_h.patch
+           1.2-dynamic-xcursor.patch"
 
 PKG_NAMES="${PN} ${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
 PKG_HINTS="setup runtime devel xcb xcb-devel"
