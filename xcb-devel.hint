@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libX11-xcb1 libX11-devel
+requires: libX11-xcb1 libX11-devel
 external-source: libX11
 sdesc: "X.Org X11 core library (XCB development)"
 ldesc: "X.Org X11 core library"

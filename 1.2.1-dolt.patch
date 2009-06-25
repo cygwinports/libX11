@@ -1,0 +1,12 @@
+--- origsrc/libX11-1.2.1/acinclude.m4	2009-02-17 15:53:46.000000000 -0600
++++ src/libX11-1.2.1/acinclude.m4	2009-05-28 01:46:55.629115600 -0500
+@@ -76,6 +76,9 @@ i?86-*-linux*|x86_64-*-linux*|powerpc-*-
+ |amd64-*-freebsd*|i?86-*-freebsd*|ia64-*-freebsd*)
+     pic_options='-fPIC'
+     ;;
++i?86-pc-cygwin*)
++    pic_options='-DDLL_COMMON'
++    ;;
+ i?86-apple-darwin*)
+     pic_options='-fno-common'
+     ;;
