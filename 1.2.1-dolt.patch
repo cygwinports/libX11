@@ -5,7 +5,7 @@
      pic_options='-fPIC'
      ;;
 +i?86-pc-cygwin*)
-+    pic_options='-DDLL_COMMON'
++    pic_options='-DDLL_EXPORT'
 +    ;;
  i?86-apple-darwin*)
      pic_options='-fno-common'

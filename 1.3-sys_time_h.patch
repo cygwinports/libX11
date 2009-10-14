@@ -1,0 +1,10 @@
+--- origsrc/libX11-1.3/src/xcb_io.c	2009-09-07 20:35:51.000000000 -0500
++++ src/libX11-1.3/src/xcb_io.c	2009-10-13 18:45:54.581187100 -0500
+@@ -12,6 +12,7 @@
+ #include <stdint.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <sys/time.h>
+ 
+ static void return_socket(void *closure)
+ {
