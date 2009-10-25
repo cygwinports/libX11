@@ -1,7 +1,5 @@
 inherit xorg
 
-PATCH_URI="1.3.1-vpath.patch"
-
 PKG_NAMES="${PN} ${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
 PKG_HINTS="setup runtime devel xcb xcb-devel"
 libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/lib/X11/ usr/share/X11/ usr/share/doc/"
