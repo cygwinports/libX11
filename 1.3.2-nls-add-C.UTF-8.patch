@@ -1,0 +1,39 @@
+From e8e07f20e3ce6374c8c6337176d50c98229aaede Mon Sep 17 00:00:00 2001
+From: Jon TURNEY <jon.turney@dronecode.org.uk>
+Date: Thu, 29 Oct 2009 18:22:37 +0000
+Subject: [PATCH] Add C.UTF-8 to libX11 locales
+
+XXX: This treats C.UTF-8 the same as en_US.UTF-8.
+Need to understand if that is completely correct
+---
+ nls/compose.dir.pre |    1 +
+ nls/locale.dir.pre  |    1 +
+ 2 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/nls/compose.dir.pre b/nls/compose.dir.pre
+index 2ef0bbb..1e16293 100644
+--- a/nls/compose.dir.pre
++++ b/nls/compose.dir.pre
+@@ -7,6 +7,7 @@ XCOMM
+ XCOMM $XFree86: xc/nls/compose.dir,v 1.24 2003/08/06 14:04:00 eich Exp $
+ XCOMM
+ iso8859-1/Compose:		C
++en_US.UTF-8/Compose:		C.UTF-8
+ iso8859-1/Compose:		af_ZA.ISO8859-1
+ iso8859-6/Compose:		ar_AA.ISO8859-6
+ iso8859-6/Compose:		ar_BH.ISO8859-6
+diff --git a/nls/locale.dir.pre b/nls/locale.dir.pre
+index 0fc4a9f..94e2d55 100644
+--- a/nls/locale.dir.pre
++++ b/nls/locale.dir.pre
+@@ -9,6 +9,7 @@ XCOMM	$XFree86: xc/nls/locale.dir,v 1.44 2003/12/18 04:14:22 dawes Exp $
+ XCOMM
+ 
+ C/XLC_LOCALE:				C
++en_US.UTF-8/XLC_LOCALE:			C.UTF-8
+ iso8859-1/XLC_LOCALE:			af_ZA.ISO8859-1
+ iso8859-6/XLC_LOCALE:			ar_AA.ISO8859-6
+ iso8859-6/XLC_LOCALE:			ar_BH.ISO8859-6
+-- 
+1.6.4.2
+
