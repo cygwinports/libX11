@@ -1,8 +1,6 @@
 inherit xorg
 
-
-PATCH_URI="1.3.2-nls-add-C.UTF-8.patch
-           1.3.4-troffrules-vpath.patch"
+PATCH_URI="1.4-font-matching.patch"
 
 PKG_NAMES="${PN} ${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
 PKG_HINTS="setup runtime devel xcb xcb-devel"
@@ -13,4 +11,4 @@ libX11_xcb1_CONTENTS="usr/bin/cygX11-xcb-1.dll"
 libX11_xcb_devel_CONTENTS="usr/include/X11/Xlib-xcb.h usr/lib/libX11-xcb.*
                            usr/lib/pkgconfig/x11-xcb.pc"
 
-CYGCONF_ARGS="--with-xcb --without-launchd"
+CYGCONF_ARGS="--without-launchd"
