@@ -2,8 +2,8 @@ inherit xorg
 
 PATCH_URI="1.4-font-matching.patch"
 
-PKG_NAMES="${PN} ${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
-PKG_HINTS="setup runtime devel xcb xcb-devel"
+PKG_NAMES="${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
+PKG_HINTS="runtime devel xcb xcb-devel"
 libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/lib/X11/ usr/share/X11/ usr/share/doc/"
 libX11_devel_CONTENTS="--exclude=*-xcb.* usr/include/ usr/lib/lib*
                        usr/lib/pkgconfig/ usr/share/man/"
