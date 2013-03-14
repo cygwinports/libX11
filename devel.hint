@@ -1,5 +1,0 @@
-category: X11
-requires: xproto kbproto libxcb-devel libX11_6
-external-source: libX11
-sdesc: "X.Org X11 core library (development)"
-ldesc: "X.Org X11 core library"

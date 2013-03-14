@@ -1,13 +1,23 @@
 inherit xorg
 
+NAME="libX11"
+VERSION=1.5.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="X.Org X11 core library"
+DESCRIPTION="X.Org X11 core library"
+
 PATCH_URI="1.4-font-matching.patch"
 
 PKG_NAMES="${PN}_6 ${PN}-devel ${PN}-xcb1 ${PN}-xcb-devel"
-PKG_HINTS="runtime devel xcb xcb-devel"
+libX11_6_SUMMARY="${SUMMARY} (runtime)"
 libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/lib/X11/ usr/share/X11/ usr/share/doc/"
+libX11_devel_SUMMARY="${SUMMARY} (development)"
 libX11_devel_CONTENTS="--exclude=*-xcb.* usr/include/ usr/lib/lib*
                        usr/lib/pkgconfig/ usr/share/man/"
+libX11_xcb1_SUMMARY="X.Org X11 XCB interface (runtime)"
 libX11_xcb1_CONTENTS="usr/bin/cygX11-xcb-1.dll"
+libX11_xcb_devel_SUMMARY="X.Org X11 XCB interface (development)"
 libX11_xcb_devel_CONTENTS="usr/include/X11/Xlib-xcb.h usr/lib/libX11-xcb.*
                            usr/lib/pkgconfig/x11-xcb.pc"
 

@@ -1,5 +1,0 @@
-category: X11
-requires: 
-external-source: libX11
-sdesc: "X.Org X11 core library (XCB runtime)"
-ldesc: "X.Org X11 core library"
