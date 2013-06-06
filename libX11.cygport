@@ -21,4 +21,4 @@ libX11_xcb_devel_SUMMARY="X.Org X11 XCB interface (development)"
 libX11_xcb_devel_CONTENTS="usr/include/X11/Xlib-xcb.h usr/lib/libX11-xcb.*
                            usr/lib/pkgconfig/x11-xcb.pc"
 
-CYGCONF_ARGS="--without-launchd"
+CYGCONF_ARGS="--with-fop --without-launchd"
