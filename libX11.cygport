@@ -11,7 +11,7 @@ PATCH_URI="1.4-font-matching.patch"
 
 PKG_NAMES="${NAME}_6 ${NAME}-devel ${NAME}-xcb1 ${NAME}-xcb-devel"
 libX11_6_SUMMARY="${SUMMARY} (runtime)"
-libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/lib/X11/ usr/share/X11/ usr/share/doc/"
+libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/share/X11/ usr/share/doc/"
 libX11_devel_SUMMARY="${SUMMARY} (development)"
 libX11_devel_CONTENTS="--exclude=*-xcb.* usr/include/ usr/lib/lib*
                        usr/lib/pkgconfig/ usr/share/man/"
