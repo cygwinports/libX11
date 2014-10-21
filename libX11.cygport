@@ -2,19 +2,26 @@ inherit xorg
 
 NAME="libX11"
 VERSION=1.6.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="X.Org X11 core library"
 DESCRIPTION="X.Org X11 core library"
 
-PATCH_URI="1.4-font-matching.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/libX11.git/plain/0001-Fix-XNextRequest-after-direct-usage-of-XCB.patch
+	http://pkgs.fedoraproject.org/cgit/libX11.git/plain/dont-forward-keycode-0.patch
+	http://cgit.freedesktop.org/xorg/lib/libX11/patch/?id=5dcb40f#/libX11-1.6.2-dead_acute.patch
+	1.4-font-matching.patch
+"
 
-PKG_NAMES="${NAME}_6 ${NAME}-devel ${NAME}-xcb1 ${NAME}-xcb-devel"
+PKG_NAMES="${NAME}_6 ${NAME}-devel ${NAME}-doc ${NAME}-xcb1 ${NAME}-xcb-devel"
 libX11_6_SUMMARY="${SUMMARY} (runtime)"
-libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/share/X11/ usr/share/doc/"
+libX11_6_CONTENTS="usr/bin/cygX11-6.dll usr/share/X11/ usr/share/doc/${NAME}/[ACNR]* usr/share/man/man5/"
 libX11_devel_SUMMARY="${SUMMARY} (development)"
-libX11_devel_CONTENTS="--exclude=*-xcb.* usr/include/ usr/lib/lib*
-                       usr/lib/pkgconfig/ usr/share/man/"
+libX11_devel_CONTENTS="--exclude=*-xcb.* usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
+libX11_doc_CATEGORY="Doc"
+libX11_doc_SUMMARY="${SUMMARY} (documentation)"
+libX11_doc_CONTENTS="usr/share/doc/${NAME}/*/ usr/share/man/man3/"
 libX11_xcb1_SUMMARY="X.Org X11 XCB interface (runtime)"
 libX11_xcb1_CONTENTS="usr/bin/cygX11-xcb-1.dll"
 libX11_xcb_devel_SUMMARY="X.Org X11 XCB interface (development)"
