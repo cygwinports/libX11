@@ -1,17 +1,14 @@
 inherit xorg
 
 NAME="libX11"
-VERSION=1.6.2
-RELEASE=2
+VERSION=1.6.3
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="X.Org X11 core library"
 DESCRIPTION="X.Org X11 core library"
 
 PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/libX11.git/plain/0001-Fix-XNextRequest-after-direct-usage-of-XCB.patch
 	http://pkgs.fedoraproject.org/cgit/libX11.git/plain/dont-forward-keycode-0.patch
-	http://cgit.freedesktop.org/xorg/lib/libX11/patch/?id=5dcb40f#/libX11-1.6.2-dead_acute.patch
-	1.4-font-matching.patch
 "
 
 PKG_NAMES="${NAME}_6 ${NAME}-devel ${NAME}-doc ${NAME}-xcb1 ${NAME}-xcb-devel"
