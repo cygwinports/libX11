@@ -1,7 +1,7 @@
 inherit xorg
 
 NAME="libX11"
-VERSION=1.6.4
+VERSION=1.6.5
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="X.Org X11 core library"
